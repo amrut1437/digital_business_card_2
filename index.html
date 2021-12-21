@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E Business Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+    
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+      background-color: #E9EBF0;
+    }
+    .avatar{
+      border-radius: 80px;
+      border:4px solid white;
+    }
+    .brand-name{
+      color: white;
+      font-size: 22px;
+    }
+    .brand-description{
+      font-size: 15px !important;
+      color: white;
+      margin-top: -5px;
+    }
+   
+    .pb-50{
+      padding-bottom: 50px;
+    }
+    .pt-50{
+      padding-top: 50px;
+    }
+    .pb-30{
+      padding-bottom: 30px;
+    }
+
+        .mt-50{
+      margin-top: 50px;
+    }
+    .mb-30{
+      margin-bottom: 30px;
+    }
+
+    .pt-30{
+      padding-top: 30px;
+    }
+
+    .pt-20{
+      padding-top: 20px;
+    }
+    .pt-10{
+      padding-top: 10px;
+    }
+    .social-style{
+      background: white;
+      padding: 15px;
+      border-radius: 100px;
+    }
+    .card{
+      background: url(images/card-background.png);
+      background-size:cover;
+      background-repeat: no-repeat;
+      margin: 20px;
+      border-radius:20px;
+      border: 2px solid white;
+      -webkit-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+    }
+    .card-title{
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: white;
+    }
+    .call-icon{
+      background: #104678;
+      color: white;
+      padding: 15px;
+      border-radius: 100px;
+      font-size: 20px;
+      height: 60px;
+      width: 60px;
+      line-height: 30px;
+      border:2px solid white;
+      } 
+         .mail-icon{
+      background: #E28C08;
+      color: white;
+      padding: 15px;
+      border-radius: 100px;
+      font-size: 20px;
+      height: 60px;
+      width: 60px;
+      line-height: 30px;
+      border:2px solid white;
+      } 
+      .whatsapp-icon{
+      background: #5F9E4B;
+      color: white;
+      padding: 15px;
+      border-radius: 100px;
+      font-size: 20px;
+      height: 60px;
+      width: 60px;
+      line-height: 30px;
+      border:2px solid white;
+      } 
+      .skype-icon{
+      background: #258ADE;
+      color: white;
+      padding: 15px;
+      border-radius: 100px;
+      font-size: 20px;
+      height: 60px;
+      width: 60px;
+      line-height: 30px;
+      border:2px solid white;
+      }
+
+    #action-bar{
+      background: #ECEFF8;
+      padding: 15px;
+      border: 2px solid white;
+      border-radius:20px;
+      -webkit-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+    }
+
+    body{
+      background: url(images/blue-background.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+
+    .wide-btn{
+      background: #62AA47;
+      width: 100%;
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px solid white;
+      color: white;
+      font-size: 18px;
+      -webkit-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+
+    }
+    .wide-btn-icon{
+      margin-left: 10px;
+      border:2px solid white;
+      width: 45px;
+      height: 45px;
+      border-radius: 45px;
+      line-height: 45px
+    }
+    .main-menu-grid-item{
+      /*background: #E9EBF0;*/
+      padding: 10px;
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid white;
+      color: #7C8185;
+      font-size: 13px;
+      -webkit-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+    }
+    .p-5{
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    .main-menu-grid-item .fa{ 
+      color:#7C8185 ;
+      font-size: 25px;
+    }
+    .social-icon{
+      height: 30px;
+      width: 30px;
+      border-radius: 30px;
+      line-height: 30px;
+      -webkit-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+box-shadow: 0px 1px 21px -6px rgba(0,0,0,0.49);
+    }
+  </style>
+</head>
+<body>
+<div class="blue-background-area">
+ <center class="pt-30"> <h4 class="card-title">CHARTERED ACCOUNTANT</h4></center>
+
+
+<div class="jumbotron card">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-xs-12">
+    <div class="col-sm-8 col-xs-8">
+      <img src="images/avatar.png" class="avatar" width="100" height="100">
+      <h2 class="brand-name">VIVEK GANDHI</h2>
+       <p class="brand-description">Chartered Accountant</p>
+
+    </div>
+    <div class="col-sm-4 col-xs-4 text-right">
+       <img src="images/demo-logo.png" width="60" height="60" style="border-radius: 10px;">
+
+       <i class="fa fa-share-alt mt-50 social-style" aria-hidden="true"></i>
+
+    </div>
+    
+  </div>
+  </div>
+</div>
+</div>
+
+<!------------------------------------>
+<div class="container-fluid">
+  <div class="col-md-12 text-center">
+    <div class="row" id="action-bar">
+
+      <div class="col-sm-3 col-xs-3">
+        <div class="call-icon">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+        <p>CALL</p>
+      </div>
+      <div class="col-sm-3 col-xs-3">
+        <div class="mail-icon">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <p>MAIL</p>
+      </div>
+      <div class="col-sm-3 col-xs-3">
+         <div class="whatsapp-icon">
+         <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </div>
+        <p>WHATSAPP</p>
+      </div>
+      <div class="col-sm-3 col-xs-3">
+        <div class="skype-icon">
+         <i class="fa fa-video-camera" aria-hidden="true"></i>
+         </div>
+         <p>SKYPE</p>
+      </div>
+    </div>    
+  </div>
+</div>
+</div>
+
+
+<!------------------------------------>
+<div class="container-fluid pt-20">
+
+    <div class="row">
+<div class="col-sm-6 col-xs-6 text-center">
+  <button class="wide-btn">PAY ME<i class="fa fa-inr wide-btn-icon" aria-hidden="true"></i>
+</button></div>
+<div class="col-sm-6 col-xs-6 text-center">
+  <button class="wide-btn">SAVE ME<i class="fa fa-user wide-btn-icon" aria-hidden="true"></i></button></div>
+
+</div>
+</div>
+
+<!------------------------------------>
+
+<!------------------------------------>
+<div class="container-fluid pt-20">
+<div class="col-md-12 text-center">
+
+<div class="row">
+<div class="col-sm-3 col-xs-3 text-center p-5">
+ <div class="main-menu-grid-item">
+  <i class="fa fa-user" aria-hidden="true"></i>
+  <p>ABOUT</p>
+ </div>
+</div>
+
+<div class="col-sm-3 col-xs-3 text-center p-5">
+ <div class="main-menu-grid-item">
+  <i class="fa fa-user" aria-hidden="true"></i>
+  <p>ABOUT</p>
+ </div>
+</div>
+
+<div class="col-sm-3 col-xs-3 text-center p-5">
+ <div class="main-menu-grid-item">
+  <i class="fa fa-user" aria-hidden="true"></i>
+  <p>ABOUT</p>
+ </div>
+</div>
+
+<div class="col-sm-3 col-xs-3 text-center p-5">
+ <div class="main-menu-grid-item">
+  <i class="fa fa-user" aria-hidden="true"></i>
+  <p>ABOUT</p>
+ </div>
+</div>
+
+</div>
+
+<div class="row pt-10">
+<div class="col-sm-3 col-xs-3 text-center p-5">
+ <div class="main-menu-grid-item">
+  <i class="fa fa-user" aria-hidden="true"></i>
+  <p>ABOUT</p>
+ </div>
+</div>
+
+<div class="col-sm-3 col-xs-3 text-center p-5">
+ <div class="main-menu-grid-item">
+  <i class="fa fa-user" aria-hidden="true"></i>
+  <p>ABOUT</p>
+ </div>
+</div>
+
+<div class="col-sm-3 col-xs-3 text-center p-5">
+ <div class="main-menu-grid-item">
+  <i class="fa fa-user" aria-hidden="true"></i>
+  <p>ABOUT</p>
+ </div>
+</div>
+
+<div class="col-sm-3 col-xs-3 text-center p-5">
+ <div class="main-menu-grid-item">
+  <i class="fa fa-user" aria-hidden="true"></i>
+  <p>ABOUT</p>
+ </div>
+</div>
+
+</div>
+
+</div>
+</div>
+<!------------------------------------>
+
+<!------------------------------------>
+<div class="container-fluid pt-30">
+<div class="col-md-12 text-center">
+
+<div class="row">
+<span>FOLLOW US &nbsp;</span>
+<span>
+  <i class="fa fa-facebook social-icon" aria-hidden="true"></i>
+  <i class="fa fa-instagram social-icon" aria-hidden="true"></i>
+  <i class="fa fa-whatsapp social-icon" aria-hidden="true"></i>
+  <i class="fa fa-twitter social-icon" aria-hidden="true"></i>
+  <i class="fa fa-linkedin social-icon" aria-hidden="true"></i>
+  <i class="fa fa-pinterest social-icon" aria-hidden="true"></i>
+</span>
+</div>
+
+</div>
+</div>
+<!------------------------------------>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+</body>
+</html>
